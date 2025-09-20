@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 id="form-title">로그인</h1>
+        <input type="text" id="email" placeholder="이메일 입력하세요">
+        <div class="input-group">
+            <div class="password-container">
+                <input type="password" id="password" placeholder="비밀번호를 입력하세요" required>
+                <span class="toggle-password"></span>
+            </div>
+        </div>
+
+        <div id="signup-extra" style="display: none;">
+            <input type="text" id="name" placeholder="이름 입력">
+        </div>
+
+        <button>확인</button>
+        <p class="signUp">아직 회원이 아니라면? 회원가입</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
