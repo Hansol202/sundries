@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form">
+            <h2>로그인</h2>
+            <div class="input-group">
+                <label for="name">이름</label>
+                <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+            </div>
+            <div class="input-group">
+                <label for="birthdate">생년월일</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="input-group">
+                <label for="phone">전화번호</label>
+                <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+            </div>
+            <div class="input-group captcha-group">
+                <label for="captcha">자동 입력 방지</label>
+                <div class="captcha-container">
+                    <span id="captcha-image"></span>
+                    <button type="button" id="refresh-captcha" aria-label="새로고침">🔄</button>
+                </div>
+                <input type="text" id="captcha" placeholder="위에 보이는 숫자를 입력하세요" required>
+            </div>
+            <button type="submit">로그인</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
